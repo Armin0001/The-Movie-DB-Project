@@ -1,0 +1,13 @@
+<p routerLink="" class="backStyle">< Back</p>
+<div class="divElement">
+    <img class="myImg" src={{imgUrl.concat(myData.poster_path)}}>
+    <h1 class="headingStyle">{{ myData.original_title }}</h1>
+    <hr class="hrStyle">
+    <h2 class="overviewStyle">Movie overview</h2>
+    <p class="overviewStyle">{{myData.overview}}</p>
+    
+    <p> {{ myData.vote_average !== 0 ? 'Vote average:' + myData.vote_average : 'No votes to display.' }} </p>
+    <p>Language: {{myData.languages[0] | titlecase}}</p>
+    
+</div>
+

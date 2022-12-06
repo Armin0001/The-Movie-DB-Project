@@ -1,0 +1,47 @@
+.content-div {
+    border: 2px solid;
+    text-align: center;
+    border-color: black;
+    width: 850px; 
+    height: 220px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: top;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2%;
+}
+
+.content-h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 37px;
+    color: gray;
+}
+
+.content-h2:hover {
+    cursor: pointer;
+}
+
+.content-img {
+    margin-top: 20px;
+    height: 150px;
+    width: 280px;
+}
+
+.content-img:hover {
+    cursor: pointer;
+}
+
+.mybtn {
+    height: 20px;
+    width: 200px;
+}
+
+.input-field {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    
+}
+

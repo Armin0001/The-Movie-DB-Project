@@ -1,0 +1,26 @@
+<button (click)="changeMovie(contentType)">Movies</button>
+<button (click)="changeTv(contentType)">TV Shows</button>
+<br>
+<br>
+<input name="search-field" [(ngModel)]="target" (ngModelChange)="inputChange($event)" class="input-field" type="text" placeholder="Search...">
+
+<br>
+
+    <div *ngIf="contentType==='movie'; else elseBlock">
+        <div *ngFor="let image of data.results.slice(0, 10) | movieFilter : target" class="content-div">
+        <img [routerLink]="[ '/movie', image.id ]" class="content-img" src={{imgUrl.concat(image.poster_path)}}>
+        <h2 [routerLink]="[ '/movie', image.id ]" class="content-h2">{{ image.original_title }}</h2>
+    </div>
+    </div>
+    
+        
+    <ng-template #elseBlock>
+            <div *ngFor="let image of data.results.slice(0, 10) | tvFilter : target" class="content-div">
+            <img [routerLink]="[ '/tv', image.id ]" class="content-img" src={{imgUrl.concat(image.poster_path)}}>
+            <h2 [routerLink]="[ '/tv', image.id ]" (click)="titleClick(image)" class="content-h2">{{ image.original_name }}</h2>
+        </div>
+    
+    </ng-template>
+
+
+   
