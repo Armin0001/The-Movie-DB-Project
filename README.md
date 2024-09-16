@@ -1,5 +1,7 @@
-<div align="center">
+<center>
 # MyMovieProj 
+</center>
+  <div align="center">
 <br/>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 ## Development server
