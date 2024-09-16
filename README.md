@@ -10,8 +10,9 @@ Well the features are some basic features you would find in a movie/series websi
 
 # ⚡️ Quick start
 - clone the repo
-- npm i
+
 ```
+npm i
 ng build #to build the project;  The build artifacts will be stored in the `dist/` directory.
 ```
 
