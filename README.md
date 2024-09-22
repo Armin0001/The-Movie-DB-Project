@@ -9,7 +9,10 @@ The website is using The Movie Database to generate content. It features movies 
 </div>
 
 # ✨ Features
-Well the features are some basic features you would find in a movie/series website!
+- List top 10 movies/series rating vise
+- Search for a movie or a series
+- Get more info about clicked on movie/series such as rating and descrption 
+- Switch between movies and series in the main page
 
 # ⚡️ Quick start
 - After you clone the repository:
