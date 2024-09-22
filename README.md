@@ -1,9 +1,10 @@
 <h1 align="center"> The Movie Database Project built with Angular </h1> 
 <div align="center">
 <br/>
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+<!-- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6. -->
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
+<!-- The application will automatically reload if you change any of the source files. -->
 </div>
 
 # ✨ Features
