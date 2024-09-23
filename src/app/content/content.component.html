@@ -1,10 +1,15 @@
-<button (click)="changeMovie(contentType)">Movies</button>
-<button (click)="changeTv(contentType)">TV Shows</button>
-<br>
-<br>
-<input name="search-field" [(ngModel)]="target" (ngModelChange)="inputChange($event)" class="input-field" type="text" placeholder="Search...">
+<div style="text-align: center;">
+    <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"/>
+    <button (click)="changeMovie(contentType)">Movies</button>
+    <button (click)="changeTv(contentType)">TV Shows</button>
+</div>
 
 <br>
+<br>
+<input name="search-field" spellcheck="true" [(ngModel)]="target" (ngModelChange)="inputChange($event)" class="input-field" type="text" placeholder="Search...">
+
+<br>
+    
 
     <div *ngIf="contentType==='movie'; else elseBlock">
         <div *ngFor="let image of data.results.slice(0, 10) | movieFilter : target" class="content-div">
@@ -20,6 +25,7 @@
             <h2 [routerLink]="[ '/tv', image.id ]" (click)="titleClick(image)" class="content-h2">{{ image.original_name }}</h2>
         </div>
     
+
     </ng-template>
 
 
